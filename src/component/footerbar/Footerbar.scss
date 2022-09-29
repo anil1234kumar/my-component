@@ -1,0 +1,18 @@
+.footerBar {
+  .term-policy {
+    display: flex;
+    li {
+      flex: 1 1 400px;
+      white-space: nowrap;
+      text-decoration: none;
+      margin-right: 20px;
+      list-style: none;
+    }
+  }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

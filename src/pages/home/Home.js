@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "../../component/footer/Footer";
+import Footerbar from "../../component/footerbar/Footerbar";
 import Header from "../../component/header/Header";
 import "./Home.scss";
 
@@ -19,6 +21,8 @@ function Home() {
       natus maxime ut sapiente aperiam eligendi fuga repellat ab aliquid? Ea,
       dolores! Commodi beatae aliquid assumenda, dolorem numquam amet illum quas
       quisquam minima saepe placeat possimus fugit aut.
+      <Footer />
+      <Footerbar />
     </div>
   );
 }
