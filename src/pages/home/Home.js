@@ -20,7 +20,7 @@ function Home() {
       esse quam saepe consectetur voluptatibus quasi harum delectus explicabo ex
       natus maxime ut sapiente aperiam eligendi fuga repellat ab aliquid? Ea,
       dolores! Commodi beatae aliquid assumenda, dolorem numquam amet illum quas
-      quisquam minima saepe placeat possimus fugit aut.
+      quisquam minima saepe placeat possimus fugit aut. hellow how are you
       <Footer />
       <Footerbar />
     </div>
