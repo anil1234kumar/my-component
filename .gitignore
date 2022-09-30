@@ -1,4 +1,6 @@
 
 #/please add all comment on your /
 *.js
-/main/
+# ./src/main/
+/node_modules
+/src/component/main
