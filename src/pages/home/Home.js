@@ -23,6 +23,7 @@ function Home() {
       quisquam minima saepe placeat possimus fugit aut. hellow how are you
       <Footer />
       <Footerbar />
+      welcome
     </div>
   );
 }
