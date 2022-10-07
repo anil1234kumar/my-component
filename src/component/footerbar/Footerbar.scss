@@ -1,6 +1,8 @@
 .footerBar {
   .term-policy {
     display: flex;
+    padding-left: 0;
+
     li {
       flex: 1 1 400px;
       white-space: nowrap;
