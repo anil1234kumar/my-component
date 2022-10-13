@@ -4,11 +4,26 @@ import Footerbar from "../../component/footerbar/Footerbar";
 import Header from "../../component/header/Header";
 import Layout from "../../component/layout/Layout";
 import "./Home.scss";
+import Select from "react-select";
+import { Form, Row, Col } from "react-bootstrap";
+// import { colourOptions } from "../data";
 
 function Home() {
   return (
     <div>
       <Layout>
+        <Row>
+          <Col>
+            <Form.Label htmlFor="basic-url">Your vanity URL</Form.Label>node
+            <Form.Select aria-label="Default select example">
+              <option>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </Form.Select>
+          </Col>
+          <Col></Col>
+        </Row>
         {/* <Header /> */}
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
         commodi. Quos adipisci animi voluptate tenetur sapiente praesentium
