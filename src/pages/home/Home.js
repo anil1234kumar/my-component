@@ -13,7 +13,7 @@ function Home() {
       <Layout>
         <Row>
           <Col>
-            <Form.Label htmlFor="basic-url">Your vanity URL</Form.Label>node
+            <Form.Label htmlFor="basic-url ">Your vanity URL</Form.Label>node
             <Form.Select aria-label="Default select example">
               <option>Open this select menu</option>
               <option value="1">One</option>
