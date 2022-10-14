@@ -15,9 +15,9 @@ function Footer({ className }) {
         <Container>
           <footer>
             <Row>
-              <Col>
+              <Col xl={4} lg={4} md={6} sm={6} xs={12}>
                 <div className="firstCol">
-                  <img src={logo} alt="logo" />
+                  <img src={logo} alt="logo " />
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -25,9 +25,9 @@ function Footer({ className }) {
                   </p>
                 </div>
               </Col>
-              <Col>
+              <Col xl={4} lg={4} md={6} sm={6} xs={12}>
                 <div className="secCol">
-                  <h6>Quick Link</h6>
+                  <h6 className="title">Quick Link</h6>
                   <ul>
                     <li>
                       <span>Home</span>
@@ -44,7 +44,7 @@ function Footer({ className }) {
                   </ul>
                 </div>
               </Col>
-              <Col>
+              <Col xl={4} lg={4} md={6} sm={6} xs={12}>
                 <div className="thirdSec">
                   <InputGroup>
                     <Form.Control
@@ -56,15 +56,15 @@ function Footer({ className }) {
                       Button
                     </Button>
                   </InputGroup>
-                  <h6>Social Media Links</h6>
+                  <h6 className="title">Social Media Links</h6>
                   <Link to="">
-                    <img src={linkedIn} alt="" />
+                    <img src={linkedIn} alt="icon" />
                   </Link>
                   <Link to="">
-                    <img src={twitter} alt="" />
+                    <img src={twitter} alt="icon" />
                   </Link>
                   <Link to="">
-                    <img src={insta} alt="" />
+                    <img src={insta} alt="icon" />
                   </Link>
                 </div>
               </Col>

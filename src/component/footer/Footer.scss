@@ -1,9 +1,18 @@
 .footerSec {
   background: rgba(4, 8, 32, 0.765);
-  padding: 50px 0 35px 0;
 
+  .title {
+    color: #45dca2;
+    margin-bottom: 25px;
+    @media (max-width: 576px) {
+      margin-bottom: 10px;
+    }
+  }
   .firstCol {
     text-align: start;
+    @media (max-width: 576px) {
+      text-align: center;
+    }
     p {
       margin-top: 10px;
       max-width: 285px;
@@ -11,18 +20,21 @@
       font-size: 14px;
       font-weight: 300;
       color: white;
+      @media (max-width: 576px) {
+        margin: 10px auto;
+      }
     }
   }
   .secCol {
     text-align: start;
     max-width: 234px;
-    h6 {
-      color: #45dca2;
-      margin-bottom: 30px;
+    @media (max-width: 576px) {
+      text-align: center;
+      margin: 10px auto;
     }
-
     ul {
       padding-left: 0;
+      margin-bottom: 0;
       li {
         list-style: none;
         display: flex;
@@ -33,12 +45,24 @@
           text-align: start;
           color: white;
           margin-bottom: 30px;
+          @media (max-width: 576px) {
+            margin-bottom: 10px;
+          }
         }
       }
     }
   }
   .thirdSec {
     text-align: start;
+    max-width: 334px;
+    margin-left: auto;
+    @media (max-width: 767px) {
+      margin-left: 0;
+    }
+    @media (max-width: 567px) {
+      margin: 10px auto;
+      text-align: center;
+    }
     .input-group {
       max-width: 334px;
       width: 100%;
@@ -46,6 +70,10 @@
       height: 100%;
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 10px;
+      margin-bottom: 30px;
+      @media (max-width: 567px) {
+        min-height: auto;
+      }
       .form-control {
         border: none;
         background-color: transparent;
@@ -53,6 +81,9 @@
         padding: 20px 20px 20px 30px;
         &::placeholder {
           color: rgba(255, 255, 255, 1);
+        }
+        @media (max-width: 567px) {
+          padding: 5px 5px 5px 10px;
         }
       }
       #button-addon2 {
@@ -66,10 +97,6 @@
         color: white;
         border-radius: 10px;
       }
-    }
-    h6 {
-      color: #45dca2;
-      padding: 35px 0 25px 0;
     }
     a {
       margin-right: 10px;

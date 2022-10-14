@@ -1,15 +1,22 @@
 .footerBar {
+  border-top: solid 1px white;
+  padding: 30px 0;
   .term-policy {
     display: flex;
     padding-left: 0;
-
+    margin-bottom: 0;
     li {
       flex: 1 1 400px;
       white-space: nowrap;
       text-decoration: none;
       margin-right: 20px;
       list-style: none;
+      color: white;
     }
+  }
+  p {
+    color: white;
+    margin-bottom: 0;
   }
 }
 

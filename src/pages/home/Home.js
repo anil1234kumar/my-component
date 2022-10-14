@@ -6,7 +6,6 @@ import Layout from "../../component/layout/Layout";
 import "./Home.scss";
 import Select from "react-select";
 import { Form, Row, Col } from "react-bootstrap";
-// import { colourOptions } from "../data";
 
 function Home() {
   return (
@@ -24,7 +23,6 @@ function Home() {
           </Col>
           <Col></Col>
         </Row>
-        {/* <Header /> */}
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
         commodi. Quos adipisci animi voluptate tenetur sapiente praesentium
         consequatur corrupti reiciendis in et exercitationem consequuntur maxime
@@ -39,8 +37,6 @@ function Home() {
         aliquid? Ea, dolores! Commodi beatae aliquid assumenda, dolorem numquam
         amet illum quas quisquam minima saepe placeat possimus fugit aut. hellow
         how are you
-        {/* <Footer />
-      <Footerbar /> */}
       </Layout>
     </div>
   );
