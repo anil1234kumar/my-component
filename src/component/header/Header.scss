@@ -6,14 +6,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0px;
   }
   .nav-links {
+    margin-bottom: 0;
     a {
-      @include important-text;
-      // @include border-color($color: orange);
-      @include bordered($color: rgb(0, 255, 251));
-      background-color: green;
+      // @include important-text;
+      // @include bordered($color: rgb(0, 255, 251));
+      // background-color: green;
     }
   }
   .logo {
@@ -23,13 +23,27 @@
     display: flex;
     gap: 1em;
     font-size: 18px;
+
     li {
+      list-style: none;
+      padding: 50px 34px;
+      max-height: 123px;
       &:hover {
         background-color: $background-color_2;
-        border-radius: 5px;
         transition: 0.3s ease;
+        border-bottom: solid 5px green;
       }
-      padding: 5px 14px;
+      &:last-child {
+        &:hover {
+          background-color: transparent;
+          transition: 0.3s ease;
+          border-bottom: none;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
   .services {

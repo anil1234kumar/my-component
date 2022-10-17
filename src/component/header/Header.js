@@ -3,6 +3,7 @@ import { Container, NavDropdown, Navbar, Nav } from "react-bootstrap";
 import logo from "../../Image/logo.svg";
 import { Link } from "react-router-dom";
 import "./Header.scss";
+import Button from "../button/Button";
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -61,6 +62,10 @@ function Header() {
                   </li>
                   <li>
                     <Link to="">Blogs</Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Button />
                   </li>
                 </div>
               </ul>

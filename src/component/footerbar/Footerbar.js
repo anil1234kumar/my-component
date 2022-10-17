@@ -5,7 +5,7 @@ import "./Footerbar.scss";
 function Footerbar() {
   return (
     <>
-      <section>
+      <section className="Footerbar_Sec">
         <div className="hrline"></div>
         <Container>
           <div className="d-flex footerBar">
