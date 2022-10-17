@@ -1,13 +1,117 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  nav {
+@import "../../theme/_var.scss";
+@import "../../theme/_mixins.scss";
+.headerSec {
+  background-color: $main;
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .nav-links {
     a {
-      margin-right: 50px;
-      text-decoration: none;
-      //   color: white;
+      @include important-text;
+      // @include border-color($color: orange);
+      @include bordered($color: rgb(0, 255, 251));
+      background-color: green;
+    }
+  }
+  .logo {
+    font-size: 32px;
+  }
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    li {
+      &:hover {
+        background-color: $background-color_2;
+        border-radius: 5px;
+        transition: 0.3s ease;
+      }
+      padding: 5px 14px;
+    }
+  }
+  .services {
+    position: relative;
+    &:hover {
+      .dropdown {
+        display: block;
+      }
+    }
+  }
+  .dropdown {
+    background-color: $background-color_3;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+      padding: 0.5em 1em;
+      width: 8em;
+      text-align: center;
+      &:hover {
+        background-color: $background-color_2;
+      }
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      position: absolute;
+      background-color: $background-color_1;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+      li {
+        &:hover {
+          display: inline-block;
+          background-color: $background-color_2;
+          transition: 0.3s ease;
+        }
+        + {
+          li {
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+    input[type="checkbox"] {
+      &:checked {
+        ~ {
+          .menu {
+            display: block;
+          }
+        }
+      }
+    }
+    .hamburger {
+      display: block;
+    }
+    .dropdown {
+      left: 50%;
+      top: 30px;
+      transform: translateX(35%);
+      li {
+        &:hover {
+          background-color: $background-color_2;
+        }
+      }
     }
   }
 }

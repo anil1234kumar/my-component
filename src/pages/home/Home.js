@@ -6,6 +6,7 @@ import Layout from "../../component/layout/Layout";
 import "./Home.scss";
 import Select from "react-select";
 import { Form, Row, Col } from "react-bootstrap";
+import Button from "../../component/button/Button";
 
 function Home() {
   return (
@@ -37,6 +38,8 @@ function Home() {
         aliquid? Ea, dolores! Commodi beatae aliquid assumenda, dolorem numquam
         amet illum quas quisquam minima saepe placeat possimus fugit aut. hellow
         how are you
+        <Button />
+        <Button className="design-btn " />
       </Layout>
     </div>
   );

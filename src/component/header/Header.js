@@ -4,31 +4,66 @@ import logo from "../../Image/logo.svg";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 function Header() {
   return (
     <>
-      <section>
+      <section className="headerSec">
         <Container>
-          <header className="navbar">
-            <nav>
+          <header>
+            <nav class="navbar">
               <Link to="">
                 <img src={logo} alt="" />
               </Link>
-            </nav>
-            <nav>
-              <Link to="">Home</Link>
+              <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">
+                  &#9776;
+                </label>
 
-              <Link to=""> whyus</Link>
-
-              <Link to="">solutions</Link>
-
-              <Link to="">Tokenomics</Link>
-
-              <Link to="">Blogs</Link>
-
-              <Link to="">
-                <button>connect</button>
-              </Link>
+                <div class="menu">
+                  <li>
+                    <Link to="">Home</Link>
+                  </li>
+                  <li>
+                    <Link to=""> whyus</Link>
+                  </li>
+                  <li class="services">
+                    <Link to="">solutions</Link>
+                    <ul class="dropdown">
+                      <li>
+                        <a href="/">Dropdown 1 </a>
+                      </li>
+                      <li>
+                        <a href="/">Dropdown 2</a>
+                      </li>
+                      <li>
+                        <a href="/">Dropdown 2</a>
+                      </li>
+                      <li>
+                        <a href="/">Dropdown 3</a>
+                      </li>
+                      <li>
+                        <a href="/">Dropdown 4</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link to="">Tokenomics</Link>
+                  </li>
+                  <li>
+                    <Link to="">Blogs</Link>
+                  </li>
+                </div>
+              </ul>
             </nav>
           </header>
         </Container>

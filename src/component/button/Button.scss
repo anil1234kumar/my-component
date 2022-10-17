@@ -1,0 +1,20 @@
+.design-btn {
+  background: transparent linear-gradient(253deg, #0f75c9 0%, #40bf8e 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  border: none;
+  color: white;
+  &:hover {
+    border: solid 1px #40bf8e;
+  }
+  &--serious {
+    @extend .design-btn;
+    color: green;
+    border: solid 1px red;
+  }
+  &--cool {
+    // @extend .error;
+    background-color: aqua;
+  }
+}

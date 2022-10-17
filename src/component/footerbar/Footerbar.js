@@ -5,9 +5,10 @@ import "./Footerbar.scss";
 function Footerbar() {
   return (
     <>
-      <section className="footerBar">
+      <section>
+        <div className="hrline"></div>
         <Container>
-          <div className="d-flex">
+          <div className="d-flex footerBar">
             <ul className="term-policy">
               <li>Terms</li>
               <li>Privacy Policy</li>
