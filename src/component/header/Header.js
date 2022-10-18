@@ -22,7 +22,7 @@ function Header() {
           <header>
             <nav class="navbar">
               <Link to="">
-                <img src={logo} alt="" />
+                <img className="logo" src={logo} alt="" />
               </Link>
               <ul class="nav-links">
                 <input type="checkbox" id="checkbox_toggle" />
@@ -63,15 +63,13 @@ function Header() {
                   <li>
                     <Link to="">Blogs</Link>
                   </li>
-                  <li>
-                    {" "}
-                    <Button />
-                  </li>
+                  <Button className="ms-3" />
                 </div>
               </ul>
             </nav>
           </header>
         </Container>
+        <div className="hrline"></div>
       </section>
     </>
   );

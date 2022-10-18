@@ -4,42 +4,61 @@ import Footerbar from "../../component/footerbar/Footerbar";
 import Header from "../../component/header/Header";
 import Layout from "../../component/layout/Layout";
 import "./Home.scss";
-import Select from "react-select";
-import { Form, Row, Col } from "react-bootstrap";
+import { Form, Row, Col, Container } from "react-bootstrap";
 import Button from "../../component/button/Button";
+import plus from "../../Image/plus.png";
 
 function Home() {
   return (
     <div>
       <Layout>
-        <Row>
-          <Col>
-            <Form.Label htmlFor="basic-url ">Your vanity URL</Form.Label>node
-            <Form.Select aria-label="Default select example">
-              <option>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-          </Col>
-          <Col></Col>
-        </Row>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-        commodi. Quos adipisci animi voluptate tenetur sapiente praesentium
-        consequatur corrupti reiciendis in et exercitationem consequuntur maxime
-        dignissimos excepturi placeat voluptatum sequi quod fugit pariatur modi,
-        aspernatur soluta voluptatibus consectetur saepe! Molestiae, esse quam
-        unde labore iusto facere et, doloribus debitis quae cum adipisci quia
-        quaerat officiis, sunt eius omnis ducimus. Rem a ducimus provident
-        deleniti exercitationem, quae impedit numquam quo corrupti voluptatum
-        nostrum cupiditate asperiores ea? Possimus quis, impedit dicta iure
-        minima sed esse quam saepe consectetur voluptatibus quasi harum delectus
-        explicabo ex natus maxime ut sapiente aperiam eligendi fuga repellat ab
-        aliquid? Ea, dolores! Commodi beatae aliquid assumenda, dolorem numquam
-        amet illum quas quisquam minima saepe placeat possimus fugit aut. hellow
-        how are you
-        <Button />
-        <Button className="design-btn " />
+        <section className="firstSec">
+          <Container>
+            <Row>
+              <Col>
+                <div className="text-start">
+                  <h2>
+                    SGRB A Crypto
+                    <span>Bank</span>
+                  </h2>
+                  <ul>
+                    <li>
+                      <span>
+                        <img src={plus} alt="icon" />
+                      </span>
+                      <p>
+                        A utility token is a crypto token that serves some use
+                        case within a specific ecosystem. These tokens allow
+                        users to perform some action on a certain network.{" "}
+                      </p>
+                    </li>
+                    <li>
+                      <span>
+                        <img src={plus} alt="icon" />
+                      </span>
+                      A utility token is unique to its ecosystem. SGRB Token for
+                      example, can only be used to tip content creators through
+                      the browser or through other applications that have
+                      integrated SGRB wallets, like Twitter. SGRB has no other
+                      use beyond speculating on its value. The same can be said
+                      of any utility token.{" "}
+                    </li>
+                    <li>
+                      <span>
+                        <img src={plus} alt="icon" />
+                      </span>
+                      Utility tokens are not mineable cryptocurrencies. They are
+                      usually pre-mined, being created all at once and
+                      distributed in a manner chosen by the team behind the
+                      project.
+                    </li>
+                  </ul>
+                </div>
+              </Col>
+              <Col></Col>
+            </Row>
+          </Container>
+        </section>
       </Layout>
     </div>
   );

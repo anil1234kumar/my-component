@@ -1,1 +1,14 @@
-
+.firstSec {
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      display: flex;
+      span {
+        img {
+          width: 16px;
+        }
+      }
+    }
+  }
+}

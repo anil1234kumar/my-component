@@ -8,12 +8,12 @@ function Footerbar() {
       <section className="Footerbar_Sec">
         <div className="hrline"></div>
         <Container>
-          <div className="d-flex footerBar">
+          <div className="footerBar">
             <ul className="term-policy">
               <li>Terms</li>
               <li>Privacy Policy</li>
             </ul>
-            <p>Copyright 2022 | All Rights Reserved.</p>
+            <p>Copyright @ 2022 | All Rights Reserved.</p>
           </div>
         </Container>
       </section>
