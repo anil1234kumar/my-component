@@ -1,6 +1,5 @@
 .footerSec {
   background: rgba(4, 8, 32, 0.765);
-  padding-top: 50px;
   .title {
     color: #45dca2;
     margin-bottom: 25px;
@@ -8,98 +7,113 @@
       margin-bottom: 10px;
     }
   }
-  .firstCol {
-    text-align: start;
-    @media (max-width: 576px) {
-      text-align: center;
-    }
-    p {
-      margin-top: 10px;
-      max-width: 285px;
-      width: 100%;
-      font-size: 14px;
-      font-weight: 300;
-      color: white;
+  .row {
+    padding: 50px 0 35px 0;
+
+    .firstCol {
+      text-align: start;
       @media (max-width: 576px) {
-        margin: 10px auto;
+        text-align: center;
+      }
+      p {
+        margin-top: 10px;
+        max-width: 285px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 300;
+        color: white;
+        @media (max-width: 576px) {
+          margin: 10px auto;
+        }
       }
     }
-  }
-  .secCol {
-    text-align: start;
-    max-width: 234px;
-    @media (max-width: 576px) {
-      text-align: center;
-      margin: 10px auto;
-    }
-    ul {
-      padding-left: 0;
-      margin-bottom: 0;
-      li {
-        list-style: none;
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        span {
-          width: 96px;
-          text-align: start;
-          color: white;
-          margin-bottom: 30px;
-          @media (max-width: 576px) {
-            margin-bottom: 10px;
+    .secCol {
+      text-align: start;
+      max-width: 234px;
+      @media (max-width: 576px) {
+        text-align: center;
+        margin: 10px auto;
+      }
+      ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+          list-style: none;
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
+          span {
+            width: 96px;
+            text-align: start;
+            margin-bottom: 30px;
+            @media (max-width: 576px) {
+              margin-bottom: 10px;
+            }
+            a {
+              color: white;
+              text-decoration: none;
+              &:hover {
+                color: #45dca2;
+              }
+            }
+          }
+          &:last-child {
+            span {
+              margin-bottom: 0px;
+            }
           }
         }
       }
     }
-  }
-  .thirdSec {
-    text-align: start;
-    max-width: 334px;
-    margin-left: auto;
-    @media (max-width: 767px) {
-      margin-left: 0;
-    }
-    @media (max-width: 567px) {
-      margin: 10px auto;
-      text-align: center;
-    }
-    .input-group {
+    .thirdSec {
+      text-align: start;
       max-width: 334px;
-      width: 100%;
-      min-height: 60px;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      margin-bottom: 30px;
+      margin-left: auto;
+      @media (max-width: 767px) {
+        margin-left: 0;
+      }
       @media (max-width: 567px) {
-        min-height: auto;
+        margin: 10px auto;
+        text-align: center;
       }
-      .form-control {
-        border: none;
-        background-color: transparent;
-        color: white;
-        padding: 20px 20px 20px 30px;
-        &::placeholder {
-          color: rgba(255, 255, 255, 1);
-        }
-        @media (max-width: 567px) {
-          padding: 5px 5px 5px 10px;
-        }
-      }
-      #button-addon2 {
-        margin: 8px;
-        background: transparent
-          linear-gradient(
-            249deg,
-            rgba(15, 117, 201, 1) 0%,
-            rgba(64, 191, 142, 1) 100%
-          );
-        color: white;
+      .input-group {
+        max-width: 334px;
+        width: 100%;
+        min-height: 60px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
+        margin-bottom: 30px;
+        @media (max-width: 567px) {
+          min-height: auto;
+        }
+        .form-control {
+          border: none;
+          background-color: transparent;
+          color: white;
+          padding: 20px 20px 20px 30px;
+          &::placeholder {
+            color: rgba(255, 255, 255, 1);
+          }
+          @media (max-width: 567px) {
+            padding: 5px 5px 5px 10px;
+          }
+        }
+        #button-addon2 {
+          margin: 8px;
+          background: transparent
+            linear-gradient(
+              249deg,
+              rgba(15, 117, 201, 1) 0%,
+              rgba(64, 191, 142, 1) 100%
+            );
+          color: white;
+          border-radius: 10px;
+        }
       }
-    }
-    a {
-      margin-right: 10px;
+      a {
+        margin-right: 10px;
+      }
     }
   }
 }

@@ -7,6 +7,7 @@ import "./Home.scss";
 import { Form, Row, Col, Container } from "react-bootstrap";
 import Button from "../../component/button/Button";
 import plus from "../../Image/plus.png";
+import timebg from "../../Image/timerBg.png";
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
       <Layout>
         <section className="firstSec">
           <Container>
-            <Row>
+            <Row className="align-items-center">
               <Col>
                 <div className="text-start">
                   <h2>
@@ -36,26 +37,32 @@ function Home() {
                       <span>
                         <img src={plus} alt="icon" />
                       </span>
-                      A utility token is unique to its ecosystem. SGRB Token for
-                      example, can only be used to tip content creators through
-                      the browser or through other applications that have
-                      integrated SGRB wallets, like Twitter. SGRB has no other
-                      use beyond speculating on its value. The same can be said
-                      of any utility token.{" "}
+                      <p>
+                        A utility token is unique to its ecosystem. SGRB Token
+                        for example, can only be used to tip content creators
+                        through the browser or through other applications that
+                        have integrated SGRB wallets, like Twitter. SGRB has no
+                        other use beyond speculating on its value. The same can
+                        be said of any utility token.
+                      </p>
                     </li>
                     <li>
                       <span>
                         <img src={plus} alt="icon" />
                       </span>
-                      Utility tokens are not mineable cryptocurrencies. They are
-                      usually pre-mined, being created all at once and
-                      distributed in a manner chosen by the team behind the
-                      project.
+                      <p>
+                        Utility tokens are not mineable cryptocurrencies. They
+                        are usually pre-mined, being created all at once and
+                        distributed in a manner chosen by the team behind the
+                        project.
+                      </p>
                     </li>
                   </ul>
                 </div>
               </Col>
-              <Col></Col>
+              <Col>
+                <img src={timebg} alt="img" />
+              </Col>
             </Row>
           </Container>
         </section>

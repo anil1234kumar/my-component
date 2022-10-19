@@ -13,7 +13,7 @@ function Footer({ className }) {
     <>
       <section className={`footerSec ${className}`}>
         <Container>
-          <footer>
+          <footer className="">
             <Row>
               <Col xl={4} lg={4} md={6} sm={6} xs={12}>
                 <div className="firstCol">
@@ -30,16 +30,33 @@ function Footer({ className }) {
                   <h6 className="title">Quick Link</h6>
                   <ul>
                     <li>
-                      <span>Home</span>
-                      <span>Tokenomics</span>
+                      <span>
+                        {" "}
+                        <Link to="">Home</Link>{" "}
+                      </span>
+                      <span>
+                        {" "}
+                        <Link to="">Tokenomics</Link>{" "}
+                      </span>
                     </li>
                     <li>
-                      <span>Why Us</span>
-                      <span>Roadmap</span>
+                      <span>
+                        {" "}
+                        <Link to=""> Why Us</Link>
+                      </span>
+                      <span>
+                        {" "}
+                        <Link to="">Roadmap</Link>{" "}
+                      </span>
                     </li>
                     <li>
-                      <span> Solutions</span>
-                      <span>Blogs</span>
+                      <span>
+                        {" "}
+                        <Link to="">Solutions</Link>
+                      </span>
+                      <span>
+                        <Link to="">Blogs</Link>
+                      </span>
                     </li>
                   </ul>
                 </div>

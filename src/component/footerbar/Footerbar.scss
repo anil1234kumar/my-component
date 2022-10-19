@@ -18,11 +18,17 @@
       li {
         flex: 1 1 400px;
         white-space: nowrap;
-        text-decoration: none;
         margin-right: 40px;
         list-style: none;
-        color: $white;
-        @include important-text;
+
+        a {
+          color: white;
+          text-decoration: none;
+          @include important-text;
+          &:hover {
+            color: #45dca2;
+          }
+        }
       }
     }
     p {
