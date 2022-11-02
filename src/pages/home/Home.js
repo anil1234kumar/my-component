@@ -8,6 +8,9 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 import Button from "../../component/button/Button";
 import plus from "../../Image/plus.png";
 import timebg from "../../Image/timerBg.png";
+import question from "../../Image/question.png";
+
+console.log("hellow world");
 
 function Home() {
   return (
@@ -68,7 +71,25 @@ function Home() {
               </Row>
             </Container>
           </section>
-          <section>
+          <section className="secSec" id="sec">
+            <Row>
+              <Col>
+                <Image fluid src={question} alt="img" />
+              </Col>
+              <Col>
+                <h4>Why Choose SGRB?</h4>
+                <h5>Why is SGRB Token is unique</h5>
+                <p>
+                  SGRB is Simple and safe Cryptocurrency management and payment
+                  service through double encryption security system and two-way
+                  QR technology.
+                </p>
+                <Row>
+                  <Col></Col>
+                  <Col></Col>
+                </Row>
+              </Col>
+            </Row>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
             corrupti quaerat itaque. Quibusdam ullam similique magnam quam!
             Voluptatibus rerum suscipit error dignissimos iusto doloribus,

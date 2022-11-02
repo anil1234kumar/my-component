@@ -18,7 +18,7 @@ function Header() {
       <Navbar className="p-0 " collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand className="p-0" href="#home">
-            <img fluid className="logo" src={logo} alt="logo" />
+            <img className="logo" src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
