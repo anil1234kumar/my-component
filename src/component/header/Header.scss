@@ -1,144 +1,67 @@
 @import "../../theme/_var.scss";
 @import "../../theme/_mixins.scss";
-.headerSec {
-  background-color: rgba(4, 8, 32, 0.765);
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-    @media (max-width: 768px) {
-      padding: 20px 0;
-    }
-    .nav-links {
-      margin-bottom: 0;
-    }
-    .logo {
-      width: 150px;
-      @media (max-width: 992px) {
-        width: 100px;
-      }
-    }
-    .menu {
-      display: flex;
-      align-items: center;
-      gap: 1em;
-      font-size: 18px;
 
-      li {
-        list-style: none;
-        transition: 0.3s ease;
-        height: 120px;
-        padding: 50px 0px;
-        width: 120px;
-        @media (max-width: 1200px) {
-          width: 100px;
-        }
-        @media (max-width: 992px) {
-          width: 100%;
-          padding: 50px 5px;
-        }
-        &:hover {
-          background-color: #786f6f5e;
-          transition: 0.3s ease;
-          border-bottom: solid 5px;
-          border-image: linear-gradient(268deg, #0f75c9 0%, #40bf8e 100%) 1;
-        }
+.header {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
 
-        a {
-          text-decoration: none;
-          @include important-text;
-        }
-      }
-    }
-    .services {
-      position: relative;
-      &:hover {
-        .dropdown {
-          display: block;
-        }
-      }
-      .dropdown {
-        background-color: rgba(4, 8, 32, 0.765);
-        padding: 1em 0;
-        position: absolute;
-        display: none;
-        border-radius: 8px;
-        top: 121px;
-        left: 48px;
-        width: 120px;
-        li {
-          + {
-            li {
-              margin-top: 10px;
-            }
-          }
-          padding: 10px 0;
-          text-align: center;
-          height: auto;
-          &:hover {
-            background-color: #786f6f5e;
-            border: none;
-          }
-        }
-      }
-    }
-
-    // ********************************************
-    input[type="checkbox"] {
-      display: none;
-    }
-    .hamburger {
-      display: none;
-      font-size: 24px;
-      user-select: none;
-    }
-    @media (max-width: 768px) {
-      .menu {
-        display: none;
-        position: absolute;
-        background-color: rgba(4, 8, 32, 0.765);
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-        top: 86px;
-        li {
-          max-height: 30px;
-          margin-bottom: 10px;
-          padding: 0;
-          &:hover {
-            display: inline-block;
-            transition: 0.3s ease;
-            border: none;
-          }
-        }
-      }
-      input[type="checkbox"] {
-        &:checked {
-          ~ {
-            .menu {
-              display: block;
-            }
-          }
-        }
-      }
-      .hamburger {
-        display: block;
-      }
-      .services {
-        .dropdown {
-          left: 53% !important;
-          top: 30px !important;
-          transform: translateX(35%);
-          padding: 10px 2px;
-          margin-bottom: 0;
-          li {
-            padding: 0;
-            margin-bottom: 0;
-          }
-        }
-      }
+  .logo {
+    width: 160px;
+    height: 75px;
+    @media (max-width: 992px) {
+      width: 100px;
     }
   }
+  a.nav-link {
+    padding: 46px 30px !important;
+    margin-right: 4px;
+    font-size: 16px;
+    white-space: nowrap;
+    color: white;
+    &:hover,
+    &:active,
+    &.active {
+      background-color: rgba(69, 220, 162, 0.2);
+      position: relative;
+      color: aliceblue !important;
+      &::after {
+        background: linear-gradient(268deg, #0f75c9, #40bf8e);
+        bottom: 0;
+        content: "";
+        height: 0.4rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+    @media (max-width: 1300px) {
+      padding: 26px 10px !important;
+    }
+  }
+
+  .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+    position: absolute;
+    top: 21px;
+    right: 14px;
+    // position: absolute;
+    // top: 24px;
+    // right: 170px;
+    // right: 30%;
+    // @media (max-width: 420px) {
+    //   right: 40%;
+    // }
+  }
+  .fixedBtn {
+    @media (max-width: 992px) {
+      position: absolute;
+      top: 16px;
+      right: 61px;
+    }
+  }
+}
+
+.headerbg {
+  background-color: #000;
 }

@@ -1,77 +1,44 @@
-import React from "react";
-import { Container, NavDropdown, Navbar, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import { Nav, Container, Navbar } from "react-bootstrap";
 import logo from "../../Image/logo.svg";
-import { Link } from "react-router-dom";
-import "./Header.scss";
 import Button from "../button/Button";
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+import "./Header.scss";
 
 function Header() {
-  return (
-    <>
-      <section className="headerSec">
-        <Container>
-          <header>
-            <nav class="navbar">
-              <Link to="">
-                <img className="logo" src={logo} alt="" />
-              </Link>
-              <ul class="nav-links">
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">
-                  &#9776;
-                </label>
+  const [color, setColor] = useState(false);
+  const colorChange = () => {
+    if (window.scrollY >= 150) {
+      setColor(true);
+    } else setColor(false);
+  };
+  window.addEventListener("scroll", colorChange);
 
-                <div class="menu">
-                  <li>
-                    <Link to="">Home</Link>
-                  </li>
-                  <li>
-                    <Link to=""> whyus</Link>
-                  </li>
-                  <li class="services">
-                    <Link to="">solutions</Link>
-                    <ul class="dropdown">
-                      <li>
-                        <a href="/">Dropdown 1 </a>
-                      </li>
-                      <li>
-                        <a href="/">Dropdown 2</a>
-                      </li>
-                      <li>
-                        <a href="/">Dropdown 2</a>
-                      </li>
-                      <li>
-                        <a href="/">Dropdown 3</a>
-                      </li>
-                      <li>
-                        <a href="/">Dropdown 4</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link to="">Tokenomics</Link>
-                  </li>
-                  <li>
-                    <Link to="">Blogs</Link>
-                  </li>
-                  <Button className="ms-3" />
-                </div>
-              </ul>
-            </nav>
-          </header>
+  return (
+    <div className={color ? "header headerbg" : "header"}>
+      <Navbar className="p-0 " collapseOnSelect expand="lg">
+        <Container>
+          <Navbar.Brand className="p-0" href="#home">
+            <img fluid className="logo" src={logo} alt="logo" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link className="active" href="#features">
+                Home
+              </Nav.Link>
+              <Nav.Link href="#">Why Us</Nav.Link>
+              <Nav.Link href="">Tokenomics</Nav.Link>
+              <Nav.Link href="">Solution</Nav.Link>
+              <Nav.Link href="">Utility</Nav.Link>
+              <Nav.Link href="">Banking</Nav.Link>
+              <Nav.Link href="">Roadmap</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+          <Button className="ms-4 fixedBtn" />
         </Container>
-        <div className="hrline"></div>
-      </section>
-    </>
+      </Navbar>
+      <div className="hrline"></div>
+    </div>
   );
 }
 

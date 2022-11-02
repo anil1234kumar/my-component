@@ -1,14 +1,28 @@
-.firstSec {
-  background: #0c9aaa;
-  ul {
-    padding: 0;
-    li {
-      list-style: none;
-      display: flex;
-      span {
-        img {
-          width: 16px;
+@import "../../theme/_var.scss";
+@import "../../theme/_mixins.scss";
+.home-Page {
+  background-image: url(../../Image/HomeBg.png);
+  background-repeat: no-repeat;
+  background-color: black;
+  .firstSec {
+    // background: #0c9aaa;
+    @include padding-adjust;
+    color: white;
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        display: flex;
+        span {
+          img {
+            width: 16px;
+          }
         }
+      }
+    }
+    .timeSec {
+      @media (max-width: 992px) {
+        order: -1;
       }
     }
   }
