@@ -1,16 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 import Footer from "../../component/footer/Footer";
 import Footerbar from "../../component/footerbar/Footerbar";
 import Header from "../../component/header/Header";
 import Layout from "../../component/layout/Layout";
 import "./Home.scss";
 import { Row, Col, Container, Image } from "react-bootstrap";
-import Button from "../../component/button/Button";
+// import Button from "../../component/button/Button";
 import plus from "../../Image/plus.png";
 import timebg from "../../Image/timerBg.png";
 import question from "../../Image/question.png";
-
-console.log("hellow world");
 
 function Home() {
   return (
@@ -382,6 +380,7 @@ function Home() {
             laboriosam, voluptatum velit eum voluptatibus! Ratione natus
             excepturi doloribus optio?
           </section>
+          <section></section>
         </main>
       </Layout>
     </div>

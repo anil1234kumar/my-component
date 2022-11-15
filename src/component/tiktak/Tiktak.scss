@@ -1,0 +1,19 @@
+.card-box {
+  border: solid 1px red;
+  &_image {
+  }
+  &_title {
+    color: green;
+  }
+  &_defination {
+    color: red;
+  }
+  &_button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    &:hover {
+      background-color: green;
+    }
+  }
+}

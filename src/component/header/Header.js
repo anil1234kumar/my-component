@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Nav, Container, Navbar } from "react-bootstrap";
 import logo from "../../Image/logo.svg";
-import Button from "../button/Button";
+// import Button from "../button/Buttons";
 import "./Header.scss";
 
 function Header() {
@@ -34,7 +34,7 @@ function Header() {
               <Nav.Link href="">Roadmap</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <Button className="ms-4 fixedBtn" />
+          {/* <Button className="ms-4 fixedBtn" /> */}
         </Container>
       </Navbar>
       <div className="hrline"></div>
