@@ -9,11 +9,14 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 import plus from "../../Image/plus.png";
 import timebg from "../../Image/timerBg.png";
 import question from "../../Image/question.png";
+import Login from "../../component/login/Login.tsx";
 
 function Home() {
   return (
     <div className="home-Page">
+      dsfdkjshfdk
       <Layout>
+        <Login />
         <main>
           <section id="first" className="firstSec">
             <Container>

@@ -1,9 +1,12 @@
 @import "../../theme/_var.scss";
 @import "../../theme/_mixins.scss";
 .home-Page {
+  // color: black;
   background-image: url(../../Image/HomeBg.png);
   background-repeat: no-repeat;
   background-color: black;
+  // display: flex;
+
   .firstSec {
     // background: #0c9aaa;
     @include padding-adjust;
