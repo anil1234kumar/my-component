@@ -5,7 +5,7 @@ import Home from "./pages/home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./pages/About/About";
 import List from "./pages/listpage/List";
-import StyleComlponent from "./component/StyleComponent/StyleComlponent";
+import StyleComlponent from "./pages/StyleComponent/StyleComlponent";
 
 function App() {
   return (
