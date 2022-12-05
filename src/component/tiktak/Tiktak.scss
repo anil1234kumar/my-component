@@ -1,12 +1,33 @@
 .card-box {
-  border: solid 1px red;
+  border-radius: 0px 0px 12px 12px;
   &_image {
   }
   &_title {
-    color: green;
   }
   &_defination {
-    color: red;
+    &_detail {
+      background: #022115;
+      opacity: 0.2;
+      border-radius: 12px;
+      padding: 10px;
+      label {
+        font-weight: 400;
+        font-size: 12px;
+        white-space: nowrap;
+        color: #ffffff;
+        opacity: 0.8;
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        background: linear-gradient(90deg, #acb6e5 0%, #86fde8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
   }
   &_button {
     background-color: yellow;
@@ -15,5 +36,40 @@
     &:hover {
       background-color: green;
     }
+    &_icon-inbutton {
+      margin-right: 10px;
+    }
   }
+}
+.offer-Btn {
+  margin-top: -58px;
+}
+.bg {
+  background: black;
+}
+.textGradient {
+  background: linear-gradient(109.07deg, #fee1af 17.41%, #c79e4b 96.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.offerBtn {
+  background: linear-gradient(109.07deg, #fee1af 17.41%, #c79e4b 96.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.detail {
+}
+.icon_inbutton {
+  margin-right: 10px;
+}
+.centerBtn {
+  text-align: center;
+  max-width: 60px;
+}
+.inputsec {
+  max-width: 120px;
 }

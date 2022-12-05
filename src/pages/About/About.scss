@@ -1,15 +1,25 @@
 .white {
-  background-color: white;
+  // background-color: white;
 }
 .green {
-  background-color: green;
+  // background-color: green;
 }
 .orange {
   background-color: orange;
 }
 .cardbg {
-  background-color: red;
+  // background-color: red;
 }
 .active {
   background-color: green;
+}
+.cardbg {
+  border-radius: 8px;
+}
+.card-box.card {
+  border-radius: 11px;
+}
+.cards {
+  background: #000000;
+  opacity: 0.8;
 }
