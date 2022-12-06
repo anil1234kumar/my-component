@@ -2,6 +2,18 @@
   border-radius: 0px 0px 12px 12px;
   &_image {
   }
+  &_offer-Btn {
+    margin-top: -58px;
+    text-align: end;
+    padding: 10px;
+    &_offer-text {
+      background: linear-gradient(109.07deg, #fee1af 17.41%, #c79e4b 96.23%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
   &_title {
   }
   &_defination {
@@ -41,9 +53,7 @@
     }
   }
 }
-.offer-Btn {
-  margin-top: -58px;
-}
+
 .bg {
   background: black;
 }
@@ -54,13 +64,7 @@
   background-clip: text;
   text-fill-color: transparent;
 }
-.offerBtn {
-  background: linear-gradient(109.07deg, #fee1af 17.41%, #c79e4b 96.23%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
+
 .detail {
 }
 .icon_inbutton {
@@ -68,8 +72,26 @@
 }
 .centerBtn {
   text-align: center;
-  max-width: 60px;
+  max-width: 50px;
+  background: #d9d9d9;
+  opacity: 0.2;
 }
 .inputsec {
   max-width: 120px;
+}
+.inputPluse {
+  background: url("../../Image/pluse.svg") no-repeat 14px 14px;
+  width: 30px;
+  background-color: #022115;
+  background-position: center;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.inputminus {
+  background: url("../../Image/nagative.svg") no-repeat 14px 14px;
+  background-position: center;
+  width: 30px;
+  border-top-left-radius: 6px;
+  background-color: #022115;
+  border-bottom-left-radius: 6px;
 }
