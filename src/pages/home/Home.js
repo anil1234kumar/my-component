@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import Footer from "../../component/footer/Footer";
 import Footerbar from "../../component/footerbar/Footerbar";
 import Header from "../../component/header/Header";
@@ -12,6 +12,12 @@ import question from "../../Image/question.png";
 import Login from "../../component/login/Login.tsx";
 
 function Home() {
+  useEffect(() => {
+    document.body.classList.add("home-layout");
+    return () => {
+      document.body.classList.remove("home-layout");
+    };
+  }, []);
   return (
     <div className="home-Page">
       <Layout>

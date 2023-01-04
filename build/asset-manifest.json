@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a3aaa3dc.css",
+    "main.js": "/static/js/main.ad416adb.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/room.jpg": "/static/media/room.70f4dffcfaf3ee3fd3b1.jpg",
+    "static/media/snowplant.jpg": "/static/media/snowplant.320770aa209bdfb1d9bb.jpg",
+    "static/media/HomeBg.png": "/static/media/HomeBg.293e6fbd8172e39f280c.png",
+    "static/media/question.png": "/static/media/question.e953ba589cff016d2c10.png",
+    "static/media/Bg ticket2.png": "/static/media/Bg ticket2.54c6c350e6171ceacd77.png",
+    "static/media/BgTicket1.png": "/static/media/BgTicket1.d99aa8563f78b4c8b4ad.png",
+    "static/media/bgticket3.png": "/static/media/bgticket3.f8a073c13000ff2e683c.png",
+    "static/media/timerBg.png": "/static/media/timerBg.7074cd022e8bb4bc2cb5.png",
+    "static/media/logo.svg": "/static/media/logo.b6fbe49a3a40eb42c49854442e55dc78.svg",
+    "static/media/twitter.svg": "/static/media/twitter.dda6fde31c9571c044e5126d1b9028b3.svg",
+    "static/media/offer.svg": "/static/media/offer.5ba88bf1ba3913bde31deda8c556edf1.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.697aae5310e2c6dbcabf364d8d66b001.svg",
+    "static/media/instagram.svg": "/static/media/instagram.ec7547619425ea7df12a4df50d2c1746.svg",
+    "index.html": "/index.html",
+    "static/media/Buy.svg": "/static/media/Buy.8d991544627a5d555118d542d7b44e0c.svg",
+    "static/media/pluse.svg": "/static/media/pluse.b20acab86aab5b1e9ac343f1e01ca60e.svg",
+    "static/media/nagative.svg": "/static/media/nagative.649079660f21b0253d65.svg",
+    "main.a3aaa3dc.css.map": "/static/css/main.a3aaa3dc.css.map",
+    "main.ad416adb.js.map": "/static/js/main.ad416adb.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3aaa3dc.css",
+    "static/js/main.ad416adb.js"
+  ]
+}

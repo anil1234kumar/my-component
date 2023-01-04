@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="39" viewBox="0 0 39 39">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" x2="0.021" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0f75c9"/>
+      <stop offset="1" stop-color="#40bf8e"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_45" data-name="Group 45" transform="translate(0.023)">
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="19.5" cy="19.5" r="19.5" transform="translate(-0.023)" fill="url(#linear-gradient)"/>
+    <path id="Контур_1977" data-name="Контур 1977" d="M25808.2,266.234a5.111,5.111,0,0,1,5.076-5.118h6.887a5.113,5.113,0,0,1,5.078,5.118l0,6.827a5.11,5.11,0,0,1-5.074,5.117h-6.889a5.113,5.113,0,0,1-5.076-5.117Zm5.076-3.412a3.437,3.437,0,0,0-3.391,3.412l.006,6.827a3.432,3.432,0,0,0,3.385,3.411h6.887a3.433,3.433,0,0,0,3.385-3.411v-6.824a3.434,3.434,0,0,0-3.385-3.412Zm1.691,6.824a1.752,1.752,0,0,0,1.693,1.705,1.709,1.709,0,1,0,0-3.412,1.761,1.761,0,0,0-1.693,1.707Zm1.693-3.412a3.436,3.436,0,1,0,2.467.972,3.415,3.415,0,0,0-2.467-.972Zm3.865-1.706a1.281,1.281,0,1,0,1.154.624A1.28,1.28,0,0,0,25820.525,264.528Z" transform="translate(-25797.322 -250.239)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

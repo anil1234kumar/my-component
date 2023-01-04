@@ -1,0 +1,41 @@
+@import "../../../theme/_var.scss";
+header {
+  .btn {
+    color: $black;
+    border: solid 1px #1dd9d5;
+    border-radius: 30px;
+    padding: 10px 50px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    &:hover {
+      color: white !important;
+      background-color: #1dd9d5 !important;
+      border: solid 1px red;
+    }
+  }
+  .active {
+    background-color: transparent;
+  }
+  .navbar-nav {
+    position: relative;
+    @media (max-width: 991px) {
+      background-color: #e0dede;
+    }
+  }
+  a.nav-link {
+    color: $black;
+    padding: 10px 30px !important;
+    @media (max-width: 1399px) and (min-width: 992px) {
+      padding: 10px !important;
+    }
+    @media (max-width: 991px) {
+      &:hover,
+      &:active,
+      &:focus,
+      .active {
+        background-color: #1dd9d5 !important;
+      }
+    }
+  }
+}
